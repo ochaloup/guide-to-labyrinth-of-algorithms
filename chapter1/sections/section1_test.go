@@ -51,4 +51,7 @@ func TestTask2(t *testing.T) {
 
 	result = Task2CharacterRepeated("abcdefgh")
 	assert.Equal(t, "abcdefgh", result)
+
+	result = Task2CharacterRepeated("abc defgh")
+	assert.Equal(t, "abc defgh", result)
 }

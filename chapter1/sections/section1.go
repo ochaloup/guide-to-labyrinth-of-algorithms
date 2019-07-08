@@ -50,7 +50,7 @@ func Task2CharacterRepeated(data string) string {
 	var temporaryRunes []rune
 	var left, right int
 	for index, character := range runes {
-		if _inList(character, temporaryRunes) {
+		if _inList(character, temporaryRunes) && string(character) != " " {
 			// fmt.Printf(">>>> on clear: %v at index %v\n", string(character), index)
 			temporaryRunes = []rune{character}
 			left = index
