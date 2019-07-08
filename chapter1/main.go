@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/ochaloup/guide-labyrinth-of-algorithms/chapter1/sections"
+	"github.com/ochaloup/guide-to-labyrinth-of-algorithms/chapter1/sections"
 )
 
 var sequence1 = []int{1, -2, 4, 5, -1, -5, 2, 7}
