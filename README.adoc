@@ -1,0 +1,10 @@
+= Exercises for golang and algorithmic thinking
+
+These are exercises based on the book
+http://pruvodce.ucw.cz/
+
+== How to run
+
+```
+git clone ... $GOPATH/github.com/ochaloup/guide-to-labyrinth-of-algorithms
+```
