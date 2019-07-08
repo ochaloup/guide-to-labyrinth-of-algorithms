@@ -17,6 +17,10 @@ func Task0MaxSum3(recordsX []int) (maximum int) {
 
 // Task1MaxSum3WithIndex receives an array of ints and finds the largest sum of a solid sequence
 //  while it returns the sum and index
+/*
+ * Upravte algoritmus MaxSoučet3, aby oznámil nejen maximální součet, ale také
+ * polohu příslušného úseku.
+ */
 func Task1MaxSum3WithIndex(recordsX []int) (maximum, left, right int) {
 	k := 0
 	proposedLeftIndex := left
@@ -37,6 +41,10 @@ func Task1MaxSum3WithIndex(recordsX []int) (maximum, left, right int) {
 }
 
 // Task2CharacterRepeated searches for longest not repeatable sequence of characters in input string
+/*
+ * Na vstupu je text složený z písmen české abecedy a mezer. Vymyslete algoritmus,
+ * který najde nejdelší úsek textu, v němž se žádné písmeno neopakuje.
+ */
 func Task2CharacterRepeated(data string) string {
 	runes := []rune(data)
 	var temporaryRunes []rune
