@@ -20,5 +20,11 @@ func main() {
 	// fmt.Printf("Result is: %v, index left: %v, index right: %v\n", result, left, right)
 
 	// run task 2
-	fmt.Println("Result: ", sections.Task2CharacterRepeated("aaaaahčeeskyoj"))
+	// fmt.Println("Result: ", sections.Task2CharacterRepeated("aaaaahčeeskyoj"))
+
+	// run task 3
+	res, _, _, _ := sections.Task3ShortestPartWithAllLetters2("abcdefghiaaabcdefffghabcabc")
+	fmt.Println("Result: ", res)
+	res2, _, _, _ := sections.Task3ShortestPartWithAllLetters2("aaaaahčeeskyoj")
+	fmt.Println("Result2: ", res2)
 }

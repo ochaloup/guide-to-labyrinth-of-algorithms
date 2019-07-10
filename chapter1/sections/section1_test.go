@@ -42,8 +42,7 @@ func TestTask1(t *testing.T) {
 }
 
 func TestTask2(t *testing.T) {
-	var result string
-	result = Task2CharacterRepeated("aaaaahčeeskyoj")
+	result := Task2CharacterRepeated("aaaaahčeeskyoj")
 	assert.Equal(t, "eskyoj", result)
 
 	result = Task2CharacterRepeated("aaaaabbbbb")
@@ -54,4 +53,18 @@ func TestTask2(t *testing.T) {
 
 	result = Task2CharacterRepeated("abc defgh")
 	assert.Equal(t, "abc defgh", result)
+}
+
+func TestTask3(t *testing.T) {
+	result, _, _, _ := Task3ShortestPartWithAllLetters2("aaaaahčeeskyoj")
+	assert.Equal(t, "ahčeeskyoj", result)
+
+	result, _, _, _ = Task3ShortestPartWithAllLetters2("aaaaabbbbb")
+	assert.Equal(t, "ab", result)
+
+	result, _, _, _ = Task3ShortestPartWithAllLetters2("abc")
+	assert.Equal(t, "abc", result)
+
+	result, _, _, _ = Task3ShortestPartWithAllLetters2("abcdefghiaaabcdefffghabcabc")
+	assert.Equal(t, "iaaabcdefffgh", result)
 }
